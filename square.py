@@ -1,4 +1,3 @@
-from ast import While
 import os
 import math
 def square(str):
@@ -13,8 +12,8 @@ def is_number(str):
     except ValueError:
         return False
 while True:
+    os.system('cls')
     while True: # Проверка введенного на соответствие формату числа
-        os.system('cls')
         x = (input('Введите сторону квадрата (мм) \n'))
         if is_number(x) == True:
             flag = 0
