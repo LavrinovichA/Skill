@@ -7,7 +7,7 @@ def is_number(str):
         return False
 while True:
     os.system('cls')
-    while True:
+    while True: # Проверка введенного на соответствие формату числа
         y = (input('Введите год для проверки \n'))
         if is_number(y) == True :
             flag = 0
@@ -22,7 +22,7 @@ while True:
         print('Год високосный\n')
     else:
         print('Год не високосный\n')
-    while True:
+    while True: # Проверка введенного на соответствие вопросу
         y=input('Хотите проверить еще один год? (Y/N)\n')
         if y=='n' or y == 'N':
             flag = 0
